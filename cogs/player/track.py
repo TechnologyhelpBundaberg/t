@@ -124,7 +124,7 @@ class Mp3File(Track):
     def queue(self):
         return {
             "name": self.title,
-            "value": f"{self.artist}: {self.album} - ({self.date})"
+            "value": f"{self.artist}: {self.album} - {f'({self.date})' if self.date != '???'}"
         }
 # - Youtube Video
 
